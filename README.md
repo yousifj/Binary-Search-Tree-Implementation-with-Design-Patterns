@@ -2,18 +2,18 @@
 
 A robust implementation of a Binary Search Tree demonstrating the use of multiple design patterns including Strategy, Visitor, Iterator, and Null Object patterns.
 
-## 📋 Overview
+## Overview
 
 This project implements a flexible Binary Search Tree data structure that can be used with different sorting strategies and traversal methods. It showcases the practical application of several design patterns to create a maintainable and extensible solution.
 
-## 🎯 Design Patterns Used
+## Design Patterns Used
 
 - **Strategy Pattern**: For implementing different sorting behaviors
 - **Visitor Pattern**: For tree analysis operations
 - **Iterator Pattern**: For tree traversal
 - **Null Object Pattern**: For handling null nodes elegantly
 
-## 📊 Class Diagram
+## Class Diagram
 
 ```mermaid
 classDiagram
@@ -127,7 +127,7 @@ classDiagram
     sortByGPA ..|> SortStrategy : implements
 ```
 
-## 🔧 Components
+## Components
 
 ### Core Components
 - `BinarySearchTree.java`: Main BST implementation with internal iterator
@@ -154,7 +154,7 @@ classDiagram
 - `Main.java`: Main application entry point
 - `MainTest.java`: Comprehensive test suite
 
-## 🚀 How It Works
+## How It Works
 
 1. Initialize a `BinarySearchTree` instance
 2. Create a `SortStrategy` object with desired sorting strategy
@@ -166,7 +166,7 @@ classDiagram
 5. Traverse the tree using the internal iterator
 6. Compare results with expected outcomes using JUnit tests
 
-## 🌳 Tree Path Counting Logic
+## Tree Path Counting Logic
 
 The implementation uses a specific approach for counting paths:
 
@@ -174,17 +174,17 @@ The implementation uses a specific approach for counting paths:
 - Example: Path `87895 -> 31298 -> 10230 -> 9230` is counted as one path even if reached through different traversals
 - Null node paths are handled consistently with regular node paths to maintain logical consistency
 
-## 👨‍💻 Author
+## Author
 
 Yousif Jabbo
 
-## 📝 Notes
+## Notes
 
 - The print mode can be toggled to control result output visibility
 - The internal iterator is implemented as a nested class within `BinarySearchTree`
 - The Null Object pattern is used to eliminate null checks and maintain consistent behavior
 
-## 🧪 Testing
+## Testing
 
 The project includes comprehensive unit tests to verify:
 - Tree construction with different sorting strategies
